@@ -8,7 +8,6 @@ import org.web3j.protocol.websocket.WebSocketService;
 import java.io.IOException;
 import java.math.BigInteger;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -25,9 +24,7 @@ public class Main {
                         + block.getBlock().getNumber() + ", hash = " +  block.getBlock().getHash() + "%n")
         );
 
-        Map<String, String> addresses = config.oracles;
-        System.out.println(addresses.toString());
-        addresses.forEach((name, address) ->  web3j.logsNotifications(List.of(address),
+        config.oracles.forEach((name, address) ->  web3j.logsNotifications(List.of(address),
                                 List.of(EventEncoder.encode(ExchangeRate.ANSWERUPDATED_EVENT))).subscribe(
                                 l -> {
                                     EventValues values = new EventValues(
