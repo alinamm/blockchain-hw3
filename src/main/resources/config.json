@@ -1,0 +1,8 @@
+{
+  "node_url": "wss://eth-mainnet.g.alchemy.com/v2/f6vXeaFC7I4x2gKB5u8WMLU2opeGLFNn",
+  "abi" : {
+    "ETH_USD": "0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419",
+    "LINK_ETH": "0xdc530d9457755926550b59e8eccdae7624181557",
+    "USDT_ETH": "0xf9d5aac6e5572aefa6bd64108ff86a222f69b64d"
+  }
+}
