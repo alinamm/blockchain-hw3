@@ -1,4 +1,3 @@
-import io.reactivex.disposables.Disposable;
 import org.web3j.abi.EventEncoder;
 import org.web3j.abi.EventValues;
 import org.web3j.abi.FunctionReturnDecoder;
