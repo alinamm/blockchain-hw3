@@ -2,7 +2,8 @@
 
 В файле src/main/java/resources/config.json укакжите ваш Alchemy url в node_url
 
-### Запуск - ```` gradlew distZip ````
+### Команда для запуска  - 
+```` gradlew distZip ````
 
 ##  Пример вывода
 
